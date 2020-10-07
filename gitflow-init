@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Initialize git flow
+git flow init -d
+
+# Bug Fix config
+git config gitflow.bugfix.start.fetch true
+git config gitflow.bugfix.delete.force true
+git config gitflow.bugfix.delete.remote false
+
+# Feature config
+git config gitflow.feature.start.fetch true
+git config gitflow.feature.delete.force true
+git config gitflow.feature.delete.remote false
+
+# Hotfix config
+git config gitflow.hotfix.start.fetch true
+git config gitflow.hotfix.delete.force true
+
+# Release config
+git config gitflow.release.start.fetch true
+git config gitflow.release.delete.fetch true
+git config gitflow.release.delete.remote false
